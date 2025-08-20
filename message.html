@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get In Touch With Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .left {
+            flex: 1;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 3rem;
+        }
+        .left h1 {
+            font-size: 8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 50px;
+        }
+        .left p {
+            font-size: 1.5rem;
+            margin: 50px 0;
+            color: #bbb;
+            text-align: center;
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            padding: 3rem;
+        }
+        .form-box {
+            background: #f1f1f1;
+            padding: 4rem;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+        .form-box h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #222;
+        }
+        .form-box label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            resize: vertical;
+        }
+        .form-box textarea {
+            min-height: 80px;
+        }
+        .form-box button {
+            background: #222;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .form-box button:hover {
+            background: #444;
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                flex: unset;
+                width: 100%;
+                padding: 30px;
+            }
+            .form-box {
+                padding: 30px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>GET IN TOUCH WITH US</h1>
+            <p>rexride.app@gmail.com</p>
+        </div>
+        <div class="right">
+            <form class="form-box">
+                <h2>Send us a message</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

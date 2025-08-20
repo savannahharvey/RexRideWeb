@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GENERAL FAQs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* <-- this is key */
+            background: #fff;
+        }
+        .logo {
+            width: 300px;
+            height: 300px;
+            margin: 0 7rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title {
+            font-size: 8rem; /* Larger font */
+            font-weight: 700;
+            color: black;
+            padding-right: 7rem;
+        }
+        .faq-container {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row; /* Horizontal layout */
+            gap: 32px;
+            justify-content: space-evenly; /* Center horizontally */
+            align-items: flex-start;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+        .faq-box {
+            background: #fff;
+            border: 2px solid black;
+            padding: 32px 40px;
+            width: 450px; /* Fixed width for horizontal layout */
+            min-width: 250px;
+            height: 500px;
+            box-sizing: border-box;
+        }
+        .faq-question {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .faq-answer {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 1100px) {
+            .faq-container {
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+            .faq-box {
+                width: 100%;
+                min-width: 0;
+            }
+        }
+        @media (max-width: 700px) {
+            .faq-container {
+                flex-direction: column;
+                padding: 0 0 40px 0;
+                gap: 24px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 32px 10px;
+            }
+            .logo {
+                margin-bottom: 10px;
+                width: 60px;
+                height: 60px;
+                font-size: 18px;
+            }
+            .title {
+                font-size: 2rem;
+            }
+            .faq-box {
+                padding: 24px 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/rexride_logo_without_words.png" alt="RexRide Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div class="title">GENERAL FAQs</div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-box">
+            <div class="faq-question">What is RexRide?</div>
+            <hr style="height:2px;border-width:0; background-color: black; margin-top: 20px; margin-bottom: 20px;">
+            <div class="faq-answer">
+                RexRide is a convenient ride-sharing platform designed to connect riders and drivers quickly and safely.
+            </div>
+        </div>
+        <div class="faq-box">
+            <div class="faq-question">How do I get BYUI student verified?</div>
+            <hr style="height:2px;border-width:0; background-color: black; margin-top: 20px; margin-bottom: 20px;">
+            <div class="faq-answer">
+                In your personal profile page, add your byui.edu email to receive a confirmation email. After accepting the confirmation email, your profile will be BYUI student certified!
+            </div>
+        </div>
+        <div class="faq-box">
+            <div class="faq-question">How do I get paid for driving someone?</div>
+            <hr style="height:2px;border-width:0; background-color: black; margin-top: 20px; margin-bottom: 20px;">
+            <div class="faq-answer">
+                Currently, payments are not processed through the platform. Drivers and riders are responsible for coordinating compensation directly and relying on mutual trust.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

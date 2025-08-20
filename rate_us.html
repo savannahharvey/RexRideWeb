@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GENERAL FAQs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gilda+Display&display=swap');
+
+        body {
+            font-family: 'DM sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .header {
+            min-height: 100vh;
+            /* min-width: 100vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3rem;
+
+            background-image: url('images/squiggle_car_no_bg_better.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: contain;
+        }
+        .like {
+            font-size: 6rem;
+            font-weight: 500;
+        }
+        .title {
+            font-size: 10rem;
+            letter-spacing: -2px;
+            font-variation-settings: 'opsz' 144, 'wght' 700;
+            text-align: center;
+            padding: 0 7rem;
+        }
+        .review {
+            text-transform: uppercase;
+            font-weight: 500;
+            background: #222;
+            color: #fff;
+            border: none;
+            width: max-content;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .like {
+                font-size: 2rem; /* shrink on tablet/phone */
+            }
+            .title {
+                font-size: 3rem;
+                padding: 0 1rem; /* remove huge side padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="like">Like our app?</div>
+        <div class="title">Give us a review on the app store!</div>
+        <button class="review">Review</button>
+    </div>
+</body>
+</html>
